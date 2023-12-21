@@ -4,17 +4,20 @@ body {
     background: #1D1D2E;
 }
 
+.card {
+    border-radius: 15px;
+    box-shadow: 0 0.5rem 2rem rgba(0,0,0,0.15);
+}
+
 .tasks-card {
     margin-top: 50px;
     margin-bottom: 100px;
     padding: 25px 0;
     text-align: center;
-    border-radius: 15px;
     background-color: #27293D;
-    box-shadow: 0 0.5rem 2rem rgba(0,0,0,.05);
 }
 
-.tasks-card .card-body h2 {
+.tasks-card h2 {
     font-size: 22px;
 }
 
@@ -32,18 +35,14 @@ p.card-separator {
     margin-top: 50px;
     padding: 25px 0;
     text-align: center;
-    border-radius: 15px;
     background-color: #27293D;
-    box-shadow: 0 0.5rem 2rem rgba(0,0,0,.15);
 }
 
 .task-edit-card {
     margin-top: 25px;
     padding: 10px 10px;
     text-align: left;
-    border-radius: 15px;
     background-color: #27293D;
-    box-shadow: 0 0.5rem 2rem rgba(0,0,0,.15);
 }
 
 .card-body h1 {
@@ -69,17 +68,13 @@ ul.task-list li.task {
     background: #1D1D2E;
 }
 
-ul.task-list li.task span.task-number {
-    color: rgb(243,101,91);
-}
-
+ul.task-list li.task span.task-number,
 ul.task-list li.task span.task-completed-icon {
-    color: rgb(243,101,91);
+    color: #F3655B;
 }
 
 ul.task-list li.task span.task-completed-date {
     font-size: 14px;
-    color: #F3655B;
 }
 
 ul.task-list ul {
@@ -101,21 +96,20 @@ ul.task-list ul li.task-buttons {
     border-radius: 5px;
 }
 
-form.create-task {
-    display: flex;
-    text-align: left;
-    margin-top: 20px;
-    padding: 0 20%;
-}
-
+form.create-task,
 form.edit-task {
     text-align: left;
 }
 
-form.create-task input.form-text {
+form.create-task input.form-text,
+form.edit-task div.form-group input.form-text {
     outline: none !important;
     caret-color: #F3655B;
     font-size: 18px;
+    border: 1px solid transparent;
+}
+
+form.create-task input.form-text {
     height: 32px;
     width: 100%;
     margin-top: 6px;
@@ -123,13 +117,9 @@ form.create-task input.form-text {
     padding: 5px;
     border-radius: 5px;
     background: white;
-    border: 1px solid transparent;
 }
 
 form.edit-task div.form-group input.form-text {
-    outline: none !important;
-    caret-color: #F3655B;
-    font-size: 18px;
     height: 50px;
     width: 100%;
     margin-right: 5px;
@@ -138,30 +128,20 @@ form.edit-task div.form-group input.form-text {
     border-radius: 5px;
     color: white;
     background: #1D1D2E;
-    border: 1px solid transparent;
 }
 
-form.create-task button.btn-todo {
-    float: right;
-    padding: 5px 10px;
-    margin-top: 4px;
-    color: white;
-    background: #FE5F55;
-    box-shadow: 0 0.5rem 2rem rgba(0,0,0,.25);
-}
-
+form.create-task button.btn-todo,
 form.edit-task button.btn-todo {
     float: right;
-    margin-top: 5px;
-    padding: 0 10px;
+    padding: 5px 10px;
     color: white;
     background: #FE5F55;
-    box-shadow: 0 0.5rem 2rem rgba(0,0,0,.25);
+    box-shadow: 0 0.5rem 2rem rgba(0,0,0,0.25);
 }
 
 button.btn-todo:hover {
     background: #FE675D;
-    box-shadow: 0 0.5rem 2rem rgba(0,0,0,.50);
+    box-shadow: 0 0.5rem 2rem rgba(0,0,0,0.50);
 }
 
 @media (max-width: 1199.98px) {
