@@ -61,9 +61,7 @@ To get started with this project, follow the steps below:
     php artisan serve
     
 
-## Demo Video
 
-[Link to Demo Video] : https://drive.google.com/file/d/1EnZxNvAZTfHmCFpnTH0rWLWVgHdeobSQ/view?usp=sharing
 
 ## Documentation
 
